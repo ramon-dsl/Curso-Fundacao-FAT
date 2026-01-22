@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Formulário de Contato</h2>
+    <form action="">
+        <fieldset>
+            <legend>Informações</legend>
+            <label for="nome">Nome:</label><br>
+            <input type="text" placeholder="Digite seu nome completo"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" placeholder="ex: fat@exemplo.com"><br><br>
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" name="telefone" id="telefone" maxlength="12" placeholder="ex: 11 99999-9999" pattern="\d{2}\s\d{5}-\d{4}">
+        </fieldset>
+        <fieldset>
+            <legend>Mensagem</legend>
+            <label for="assunto">Assunto</label><br>
+            <select name="assunto" id="assunto">
+                <option value="selecione">-- Selecione --</option>
+                <option value="informacoes">Informações</option>
+                <option value="reclamacao">Reclamação</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="elogio">Elogio</option>
+                <option value="pedido">Pedido</option>
+                <option value="outros">Outros</option>
+            </select><br><br>
+            <label for="mensagem">Sua mensagem</label><br>
+            <textarea name="mensagem" id="mensagem" maxlength="420"></textarea>
+        </fieldset>
+    </form>
+</body>
+</html>
