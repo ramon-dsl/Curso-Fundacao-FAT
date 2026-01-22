@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Formulário de Pedidos</h2>
+    <form action="">
+        <fieldset>
+            <legend>Dados do cliente</legend>
+            <label for="nome">Nome:</label><br>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required><br><br>
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" name="telefone" id="telefone" placeholder="ex: 11 99999-9999" pattern="\d{2}\s\d{5}-\d{4}" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" placeholder="ex: fat@exemplo.com" required> 
+        </fieldset>
+        <fieldset>
+            <legend>Detalhes do pedido</legend>
+            <label for="produto">Tipo de produto:</label><br>
+            <label><input type="radio" name="produto" value="bolo">Bolo</label>
+            <label><input type="radio" name="produto" value="torta">Torta</label>
+            <label><input type="radio" name="produto" value="salgados">Salgados</label><br><br>
+            <label for="sabor">Sabor:</label><br>
+            <select name="sabor" id="sabor">
+                <option value="">--Escolha--</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="morango">Morango</option>
+                <option value="baunilha">Baunilha</option>
+            </select><br><br>
+            <label for="tamanho">Tamanho:</label><br>
+            <label><input type="radio" name="tamanho" id="tamanho" value="pequeno">Pequeno</label>
+            <label><input type="radio" name="tamanho" id="tamanho" value="medio">Médio</label>
+            <label><input type="radio" name="tamanho" id="tamanho" value="grande">Grande</label><br><br>
+            <label for="data">Data de entrega:</label><br>
+            <input type="date" required>
+        </fieldset>
+        <fieldset>
+            <legend>Informações adicionais</legend>
+            <label for="observacoes">Observações especiais:</label><br>
+            <textarea name="observacoes" id="observacoes" placeholder="Digite sua observação"></textarea><br><br>
+            <label for="orcamento">Orçamento máximo:</label><br>
+            <input type="number" name="orcamento" id="orcamento" placeholder="ex: 250" minlength="1">
+        </fieldset>
+    </form>
+</body>
+</html>
