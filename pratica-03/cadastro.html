@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Formulário de Cadastro/Newsletter</h2>
+    <form action="">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="nome">Nome:</label><br>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" placeholder="ex: fat@exemplo.com" required><br><br>
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" name="telefone" id="telefone" placeholder="ex: 11 99999-9999" pattern="\d{2}\s\d{5}-\d{4}" required><br><br>
+            <label for="data">Data de nascimento:</label><br>
+            <input type="date" name="data" id="data">
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="rua">Rua:</label><br>
+            <input type="text" name="rua" id="rua" placeholder="ex: Manoel da nobrega" required><br><br>
+            <label for="numero">Número:</label><br>
+            <input type="text" name="numero" id="numero" placeholder="ex: 1150" required><br><br>
+            <label for="bairro">Bairro:</label><br>
+            <input type="text" name="bairro" id="bairro" placeholder="ex: Conceição" required><br><br>
+            <label for="cep">CEP:</label><br>
+            <input type="text" name="cep" id="cep" placeholder="ex: 09910-730" pattern="[0-9]{5}-[0-9]{3}" maxlength="9" required><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Preferências</legend>
+            <label>
+                <input type="checkbox" name="paes-artesanais" id="paes-artesanais">Pães artesanais
+            </label><br>
+            <label>
+                <input type="checkbox" name="doces-e-bolos" id="doces-e-bolos">Doces e bolos
+            </label><br>
+            <label>
+                <input type="checkbox" name="salgados" id="salgados">Salgados
+            </label><br>
+            <label>
+                <input type="checkbox" name="light-e-diet" id="light-e-diet">Produtos diet/light
+            </label><br>
+            <label>
+                <input type="checkbox" name="produtos-integrais" id="produtos-integrais">Produtos integrais
+            </label><br><br>
+            <label>Termos</label><br>
+            <label>
+                <input type="checkbox" name="promocoes" id="promocoes" required>Aceita receber promoções por email
+            </label><br>
+            <label>
+                <input type="checkbox" name="termos" id="termos" required>Aceita os termos de uso
+            </label>
+        </fieldset>
+    </form>
+</body>
+</html>
