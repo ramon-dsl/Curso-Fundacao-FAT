@@ -1,3 +1,3 @@
-Curso de Programação Web da Fundação FAT
+Curso de Programação Web - Fundação FAT
 
 https://fundacaofat.org.br/
